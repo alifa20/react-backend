@@ -1,0 +1,9 @@
+version: '2'
+services:
+    bakend-service:
+        container_name: bakend-service
+        build: ./server
+        volumes:
+            - "./server:/app_src"
+        ports:
+            - "3000:3000"
