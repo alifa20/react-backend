@@ -1,8 +1,9 @@
 version: '2'
 services:
-    bakend-service:
-        container_name: bakend-service
+    backend-service:
+        container_name: backend-service
         build: ./server
+        command: nodemon
         volumes:
             - "./server:/app_src"
         ports:
